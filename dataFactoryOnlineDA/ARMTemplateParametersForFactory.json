@@ -5,13 +5,16 @@
 		"factoryName": {
 			"value": "dataFactoryOnlineDA"
 		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
 		"AzureDataLakeStorage2_accountKey": {
 			"value": ""
 		},
 		"AzureSqlDatabase1_connectionString": {
 			"value": ""
 		},
-		"AzureSqlMI1_connectionString": {
+		"AzureSynapseAnalytics1_connectionString": {
 			"value": ""
 		},
 		"AzureDataLakeStorage2_properties_typeProperties_url": {
