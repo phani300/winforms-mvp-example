@@ -1,0 +1,17 @@
+{
+	"name": "Copy blob data Trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2019-12-24T23:25:00.000Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
