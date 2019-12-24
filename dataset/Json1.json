@@ -1,0 +1,1525 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "PAN-4216.txt",
+				"folderPath": "OnlineDA/2019/12/24",
+				"fileSystem": "eplanningcontainer"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"specversion": {
+					"type": "string"
+				},
+				"type": {
+					"type": "string"
+				},
+				"source": {
+					"type": "string"
+				},
+				"id": {
+					"type": "string"
+				},
+				"time": {
+					"type": "string"
+				},
+				"datacontenttype": {
+					"type": "string"
+				},
+				"subtype": {
+					"type": "string"
+				},
+				"subject": {
+					"type": "string"
+				},
+				"data": {
+					"type": "object",
+					"properties": {
+						"pxObjClass": {
+							"type": "string"
+						},
+						"CaseData": {
+							"type": "object",
+							"properties": {
+								"pxUpdateSystemID": {
+									"type": "string"
+								},
+								"pyAttachmentCategories": {
+									"type": "array",
+									"items": {
+										"type": "string"
+									}
+								},
+								"CouncilOrganization": {
+									"type": "string"
+								},
+								"pxUpdateDateTime": {
+									"type": "string"
+								},
+								"pyStatusCustomerSat": {
+									"type": "string"
+								},
+								"pyResolvedTimestamp": {
+									"type": "string"
+								},
+								"pxCurrentStage": {
+									"type": "string"
+								},
+								"pxUrgencyPartyTotal": {
+									"type": "integer"
+								},
+								"IsSubdivisionSelected": {
+									"type": "boolean"
+								},
+								"pyInternalAssignmentHandle": {
+									"type": "string"
+								},
+								"SiteAddressList": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"pxObjClass": {
+												"type": "string"
+											},
+											"PROPID": {
+												"type": "string"
+											},
+											"PropertyDetailsList": {
+												"type": "array",
+												"items": {
+													"type": "object",
+													"properties": {
+														"pxObjClass": {
+															"type": "string"
+														},
+														"lotnumber": {
+															"type": "string"
+														},
+														"plannumber": {
+															"type": "string"
+														}
+													}
+												}
+											},
+											"IsPrimary": {
+												"type": "boolean"
+											},
+											"pxListSubscript": {
+												"type": "string"
+											},
+											"LGAName": {
+												"type": "string"
+											},
+											"SiteAddressPage": {
+												"type": "object",
+												"properties": {
+													"LOT_TITLE": {
+														"type": "string"
+													}
+												}
+											},
+											"StreetNoAndName": {
+												"type": "string"
+											},
+											"CouncilArea": {
+												"type": "string"
+											}
+										}
+									}
+								},
+								"pxCreateDateTime": {
+									"type": "string"
+								},
+								"IsCustomAddress": {
+									"type": "boolean"
+								},
+								"OrganisationName": {
+									"type": "string"
+								},
+								"pyConfirmationNote": {
+									"type": "string"
+								},
+								"DocListToAPIs": {
+									"type": "array"
+								},
+								"pxInsName": {
+									"type": "string"
+								},
+								"pxSaveDateTime": {
+									"type": "string"
+								},
+								"pyResolvedOrg": {
+									"type": "string"
+								},
+								"pyPushNotificationsEnabled": {
+									"type": "boolean"
+								},
+								"pxUrgencyWorkClass": {
+									"type": "integer"
+								},
+								"pyFormPost": {
+									"type": "string"
+								},
+								"PrimaryPhone": {
+									"type": "object",
+									"properties": {
+										"pxObjClass": {
+											"type": "string"
+										},
+										"pxCreateOperator": {
+											"type": "string"
+										},
+										"pxCreateDateTime": {
+											"type": "string"
+										},
+										"pxCreateSystemID": {
+											"type": "string"
+										},
+										"Prefix": {
+											"type": "string"
+										},
+										"pyLabel": {
+											"type": "string"
+										},
+										"pxCreateOpName": {
+											"type": "string"
+										},
+										"pyTempText": {
+											"type": "string"
+										}
+									}
+								},
+								"pyResolvedUserWorkgroup": {
+									"type": "string"
+								},
+								"pxApplicationVersion": {
+									"type": "string"
+								},
+								"ApplicantName": {
+									"type": "string"
+								},
+								"pyTemporaryObject": {
+									"type": "boolean"
+								},
+								"pzInsKey": {
+									"type": "string"
+								},
+								"pyNotifyQuickStream": {
+									"type": "string"
+								},
+								"pyAddableWorkList": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"pyRuleAvailable": {
+												"type": "string"
+											},
+											"pyPrivilegeList": {
+												"type": "array"
+											},
+											"pyClassName": {
+												"type": "string"
+											},
+											"pyVisioJpegName": {
+												"type": "string"
+											},
+											"caseTypeClass": {
+												"type": "string"
+											},
+											"pyRuleSet": {
+												"type": "string"
+											},
+											"pxInsHandle": {
+												"type": "string"
+											},
+											"pyCanStartInteractively": {
+												"type": "boolean"
+											},
+											"pxInstanceLockedBy": {
+												"type": "string"
+											},
+											"pyCircumstanceVal": {
+												"type": "string"
+											},
+											"pyCircumstanceDateProp": {
+												"type": "string"
+											},
+											"pxInsName": {
+												"type": "string"
+											},
+											"pyMethodStatus": {
+												"type": "string"
+											},
+											"pyCircumstanceProp": {
+												"type": "string"
+											},
+											"pyStartingModel": {
+												"type": "string"
+											},
+											"pxInstanceLockedDateTime": {
+												"type": "string"
+											},
+											"pyWhensList": {
+												"type": "array"
+											},
+											"pyStartingHarness": {
+												"type": "string"
+											},
+											"pyCategory": {
+												"type": "string"
+											},
+											"pxObjClass": {
+												"type": "string"
+											},
+											"pyCircumstanceDate": {
+												"type": "string"
+											},
+											"pyRuleEnds": {
+												"type": "string"
+											},
+											"pyRuleStarts": {
+												"type": "string"
+											},
+											"pyLabel": {
+												"type": "string"
+											},
+											"pyCanCreateWorkObject": {
+												"type": "boolean"
+											},
+											"pyStreamName": {
+												"type": "string"
+											},
+											"pyFlowType": {
+												"type": "string"
+											},
+											"pyRuleSetVersion": {
+												"type": "string"
+											}
+										}
+									}
+								},
+								"pyOwnerOrg": {
+									"type": "string"
+								},
+								"pyLabelOld": {
+									"type": "string"
+								},
+								"pyStatusWorkOld": {
+									"type": "string"
+								},
+								"pyOrigUserID": {
+									"type": "string"
+								},
+								"pyElapsedStatusOpen": {
+									"type": "number"
+								},
+								"IsAgenciesDecisionCompleted": {
+									"type": "boolean"
+								},
+								"AlternatePhone": {
+									"type": "object",
+									"properties": {
+										"pxObjClass": {
+											"type": "string"
+										},
+										"pxCreateOperator": {
+											"type": "string"
+										},
+										"pxCreateDateTime": {
+											"type": "string"
+										},
+										"pxCreateSystemID": {
+											"type": "string"
+										},
+										"Prefix": {
+											"type": "string"
+										},
+										"pyLabel": {
+											"type": "string"
+										},
+										"pxCreateOpName": {
+											"type": "string"
+										},
+										"pyTempText": {
+											"type": "string"
+										}
+									}
+								},
+								"PolicyCheck": {
+									"type": "object",
+									"properties": {
+										"IsS68LGAct1993ApprovalReq": {
+											"type": "boolean"
+										},
+										"HasAccompaniedVPA": {
+											"type": "boolean"
+										},
+										"IsSelfRelatedToCouncil": {
+											"type": "boolean"
+										},
+										"HasIntegratedDevelopment": {
+											"type": "boolean"
+										},
+										"IsHeritageTreeRemovalProposed": {
+											"type": "boolean"
+										},
+										"IsPoliticalDonorWithFinInterestKnown": {
+											"type": "boolean"
+										},
+										"pxObjClass": {
+											"type": "string"
+										},
+										"IsDesignatedDevelopment": {
+											"type": "boolean"
+										},
+										"HasEnvironmentalHeritage": {
+											"type": "boolean"
+										},
+										"IsEPIVariationProposed": {
+											"type": "boolean"
+										},
+										"VPAList": {
+											"type": "array"
+										},
+										"HasRelationToCouncil": {
+											"type": "boolean"
+										},
+										"RelevantEnvPlanningInst": {
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"pxObjClass": {
+														"type": "string"
+													},
+													"PropertyName": {
+														"type": "string"
+													},
+													"DisplaySequence": {
+														"type": "integer"
+													},
+													"Value": {
+														"type": "string"
+													},
+													"Label": {
+														"type": "string"
+													},
+													"pzInsKey": {
+														"type": "string"
+													},
+													"ID": {
+														"type": "integer"
+													}
+												}
+											}
+										},
+										"IsCriticalHabitat": {
+											"type": "boolean"
+										},
+										"IsHeritageBuildingImpacted": {
+											"type": "boolean"
+										}
+									}
+								},
+								"pyLocalActionsList": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"pyLabelOld": {
+												"type": "string"
+											},
+											"pxObjClass": {
+												"type": "string"
+											},
+											"pxListSubscript": {
+												"type": "string"
+											},
+											"pyFlowKey": {
+												"type": "string"
+											},
+											"pyActionsListIndex": {
+												"type": "string"
+											},
+											"pyDescription": {
+												"type": "string"
+											},
+											"pyLabel": {
+												"type": "string"
+											},
+											"pyUsage": {
+												"type": "string"
+											}
+										}
+									}
+								},
+								"Applicant": {
+									"type": "object",
+									"properties": {
+										"pxObjClass": {
+											"type": "string"
+										},
+										"CompanyName": {
+											"type": "string"
+										},
+										"Ownership": {
+											"type": "string"
+										},
+										"PersonalInformation": {
+											"type": "object",
+											"properties": {
+												"pxObjClass": {
+													"type": "string"
+												},
+												"Email": {
+													"type": "object",
+													"properties": {
+														"pxObjClass": {
+															"type": "string"
+														},
+														"Email": {
+															"type": "string"
+														},
+														"ContactString": {
+															"type": "string"
+														}
+													}
+												},
+												"FirstName": {
+													"type": "string"
+												},
+												"pyTitle": {
+													"type": "string"
+												},
+												"LastName": {
+													"type": "string"
+												}
+											}
+										},
+										"Address": {
+											"type": "object",
+											"properties": {
+												"pxObjClass": {
+													"type": "string"
+												},
+												"ContactNumber": {
+													"type": "string"
+												},
+												"FULLADDRESS": {
+													"type": "string"
+												}
+											}
+										},
+										"ApplOnBehalfOfCompany": {
+											"type": "string"
+										},
+										"IsApplicantCompany": {
+											"type": "string"
+										},
+										"ABN": {
+											"type": "number"
+										},
+										"ACNABN": {
+											"type": "string"
+										}
+									}
+								},
+								"DateSubmitted": {
+									"type": "string"
+								},
+								"CouncilID": {
+									"type": "string"
+								},
+								"pyAgeFromDate": {
+									"type": "string"
+								},
+								"pyElapsedStatusNew": {
+									"type": "integer"
+								},
+								"AddressInformation": {
+									"type": "object",
+									"properties": {
+										"pxObjClass": {
+											"type": "string"
+										},
+										"pxCreateOperator": {
+											"type": "string"
+										},
+										"pxCreateDateTime": {
+											"type": "string"
+										},
+										"pxCreateSystemID": {
+											"type": "string"
+										},
+										"Prefix": {
+											"type": "string"
+										},
+										"pxCreateOpName": {
+											"type": "string"
+										},
+										"pyTempText": {
+											"type": "string"
+										}
+									}
+								},
+								"pxExternalSystemUpdateCount": {
+									"type": "integer"
+								},
+								"pxUpdateOpName": {
+									"type": "string"
+								},
+								"pxUpdateCounter": {
+									"type": "integer"
+								},
+								"pyFlowName": {
+									"type": "string"
+								},
+								"DevelopmentApplication": {
+									"type": "object",
+									"properties": {
+										"DAVaritationsList": {
+											"type": "array"
+										},
+										"UnitsProposed": {
+											"type": "integer"
+										},
+										"ProposedEmployeeCount": {
+											"type": "integer"
+										},
+										"StoreysProposed": {
+											"type": "integer"
+										},
+										"DevPurpose": {
+											"type": "string"
+										},
+										"CouncilUniqueNumber": {
+											"type": "string"
+										},
+										"IsStagedDevelopment": {
+											"type": "boolean"
+										},
+										"RoadProposed": {
+											"type": "string"
+										},
+										"IsCrownDevelopment": {
+											"type": "boolean"
+										},
+										"DALodgedDate": {
+											"type": "string"
+										},
+										"ParkingSpaces": {
+											"type": "integer"
+										},
+										"InvestmentValue": {
+											"type": "string"
+										},
+										"SiteAddress": {
+											"type": "string"
+										},
+										"DevType": {
+											"type": "string"
+										},
+										"DAFeePaid": {
+											"type": "string"
+										},
+										"TotalAmount": {
+											"type": "number"
+										},
+										"DeterminedAuthority": {
+											"type": "string"
+										},
+										"WorkingHours": {
+											"type": "object",
+											"properties": {
+												"pyThursdayBusiness": {
+													"type": "boolean"
+												},
+												"pyWednesdayBusiness": {
+													"type": "boolean"
+												},
+												"pyFridayBusiness": {
+													"type": "boolean"
+												},
+												"pySaturdayBusiness": {
+													"type": "boolean"
+												},
+												"pyMondayStart": {
+													"type": "string"
+												},
+												"pyTuesdayStart": {
+													"type": "string"
+												},
+												"pyThursdayEnd": {
+													"type": "string"
+												},
+												"pyWednesdayEnd": {
+													"type": "string"
+												},
+												"pySaturdayEnd": {
+													"type": "string"
+												},
+												"pxObjClass": {
+													"type": "string"
+												},
+												"pyTuesdayEnd": {
+													"type": "string"
+												},
+												"pyFridayEnd": {
+													"type": "string"
+												},
+												"pySundayStart": {
+													"type": "string"
+												},
+												"pyFridayStart": {
+													"type": "string"
+												},
+												"pyThursdayStart": {
+													"type": "string"
+												},
+												"pyWednesdayStart": {
+													"type": "string"
+												},
+												"pyMondayBusiness": {
+													"type": "boolean"
+												},
+												"pyTuesdayBusiness": {
+													"type": "boolean"
+												},
+												"pySaturdayStart": {
+													"type": "string"
+												},
+												"pySundayEnd": {
+													"type": "string"
+												},
+												"pySundayBusiness": {
+													"type": "boolean"
+												},
+												"pyMondayEnd": {
+													"type": "string"
+												}
+											}
+										},
+										"pxObjClass": {
+											"type": "string"
+										},
+										"SubdivisionList": {
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"pxObjClass": {
+														"type": "string"
+													},
+													"PropertyName": {
+														"type": "string"
+													},
+													"DisplaySequence": {
+														"type": "integer"
+													},
+													"Label": {
+														"type": "string"
+													},
+													"Value": {
+														"type": "string"
+													},
+													"pzInsKey": {
+														"type": "string"
+													}
+												}
+											}
+										},
+										"DateOfDetermination": {
+											"type": "string"
+										},
+										"pzIndexOwnerKey": {
+											"type": "string"
+										},
+										"PrelodgementOutcome": {
+											"type": "string"
+										},
+										"DwellingsDemolished": {
+											"type": "integer"
+										}
+									}
+								},
+								"pxUpdateOperator": {
+									"type": "string"
+								},
+								"pyAddableFlowList": {
+									"type": "array"
+								},
+								"pxCurrentStageSubscript": {
+									"type": "string"
+								},
+								"PropertyDetailsList": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"pxObjClass": {
+												"type": "string"
+											},
+											"lotnumber": {
+												"type": "string"
+											},
+											"plannumber": {
+												"type": "string"
+											}
+										}
+									}
+								},
+								"pyNextEmailThreadID": {
+									"type": "integer"
+								},
+								"Respondent": {
+									"type": "string"
+								},
+								"SiteAddressPage": {
+									"type": "object",
+									"properties": {
+										"pxObjClass": {
+											"type": "string"
+										},
+										"PROPID": {
+											"type": "string"
+										},
+										"FULLADDRESSCODE": {
+											"type": "string"
+										}
+									}
+								},
+								"ProposedDANumVal": {
+									"type": "string"
+								},
+								"applicationName": {
+									"type": "string"
+								},
+								"pyStatusWork": {
+									"type": "string"
+								},
+								"EmailNotificationType": {
+									"type": "string"
+								},
+								"SiteAddress": {
+									"type": "string"
+								},
+								"pyWorkIDPrefix": {
+									"type": "string"
+								},
+								"pxTickets": {
+									"type": "array",
+									"items": {
+										"type": "string"
+									}
+								},
+								"ExpetedCaseStatus": {
+									"type": "string"
+								},
+								"BriefVariationJustification": {
+									"type": "string"
+								},
+								"pyOrigDivision": {
+									"type": "string"
+								},
+								"CaseSubmittedDate": {
+									"type": "string"
+								},
+								"pyResolvedTime": {
+									"type": "number"
+								},
+								"pyResolvedDivision": {
+									"type": "string"
+								},
+								"pxCurrentStageLabel": {
+									"type": "string"
+								},
+								"pxObjClass": {
+									"type": "string"
+								},
+								"pyOrigOrg": {
+									"type": "string"
+								},
+								"pyResolvedUserDivision": {
+									"type": "string"
+								},
+								"DecisionEndDate": {
+									"type": "string"
+								},
+								"pyNote": {
+									"type": "string"
+								},
+								"pxResolveSummary": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"pxObjClass": {
+												"type": "string"
+											},
+											"pxResolvedUserName": {
+												"type": "string"
+											},
+											"pxResolvedOrgUnit": {
+												"type": "string"
+											},
+											"pxResolvedOrg": {
+												"type": "string"
+											},
+											"pxResolvedDivision": {
+												"type": "string"
+											},
+											"pxResolvedTimestamp": {
+												"type": "string"
+											},
+											"pxResolvedUserDivision": {
+												"type": "string"
+											},
+											"pxResolvedUserID": {
+												"type": "string"
+											},
+											"pxResolvedUserWorkgroup": {
+												"type": "string"
+											},
+											"pxResolvedStatus": {
+												"type": "string"
+											}
+										}
+									}
+								},
+								"AdditionalInfoSubmissionDate": {
+									"type": "string"
+								},
+								"DevStandardVaried": {
+									"type": "string"
+								},
+								"pxCreateSystemID": {
+									"type": "string"
+								},
+								"pxCommitDateTime": {
+									"type": "string"
+								},
+								"displayAppLabel": {
+									"type": "string"
+								},
+								"pyOrigUserWorkgroup": {
+									"type": "string"
+								},
+								"pxUrgencyWorkStageSLA": {
+									"type": "integer"
+								},
+								"DevComprisedComponents": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"pxObjClass": {
+												"type": "string"
+											},
+											"PropertyName": {
+												"type": "string"
+											},
+											"DisplaySequence": {
+												"type": "integer"
+											},
+											"Value": {
+												"type": "string"
+											},
+											"Label": {
+												"type": "string"
+											},
+											"pzInsKey": {
+												"type": "string"
+											},
+											"ID": {
+												"type": "integer"
+											},
+											"pySelected": {
+												"type": "boolean"
+											}
+										}
+									}
+								},
+								"ClauseOfDevStandard": {
+									"type": "string"
+								},
+								"Email": {
+									"type": "object",
+									"properties": {
+										"pxObjClass": {
+											"type": "string"
+										},
+										"pxCreateOperator": {
+											"type": "string"
+										},
+										"pxCreateDateTime": {
+											"type": "string"
+										},
+										"pxCreateSystemID": {
+											"type": "string"
+										},
+										"Prefix": {
+											"type": "string"
+										},
+										"pyLabel": {
+											"type": "string"
+										},
+										"pxCreateOpName": {
+											"type": "string"
+										},
+										"pyTempText": {
+											"type": "string"
+										}
+									}
+								},
+								"pzIndexCount": {
+									"type": "integer"
+								},
+								"pyResolvedOrgUnit": {
+									"type": "string"
+								},
+								"pxStageHistory": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"pxObjClass": {
+												"type": "string"
+											},
+											"pxEnterStageTime": {
+												"type": "string"
+											},
+											"pxCompletedBy": {
+												"type": "string"
+											},
+											"pxStageName": {
+												"type": "string"
+											},
+											"pxProcesses": {
+												"type": "array",
+												"items": {
+													"type": "object",
+													"properties": {
+														"pxObjClass": {
+															"type": "string"
+														},
+														"pxIsComplete": {
+															"type": "string"
+														},
+														"pxCompletedTime": {
+															"type": "string"
+														},
+														"pxProcessName": {
+															"type": "string"
+														},
+														"pxCompletedBy": {
+															"type": "string"
+														},
+														"pxStartTime": {
+															"type": "string"
+														},
+														"pxSteps": {
+															"type": "array",
+															"items": {
+																"type": "object",
+																"properties": {
+																	"pxObjClass": {
+																		"type": "string"
+																	},
+																	"pxStepType": {
+																		"type": "string"
+																	},
+																	"pyLabel": {
+																		"type": "string"
+																	},
+																	"pxStepID": {
+																		"type": "string"
+																	}
+																}
+															}
+														},
+														"pxFlowID": {
+															"type": "string"
+														},
+														"pxStartedBy": {
+															"type": "string"
+														},
+														"pyLabel": {
+															"type": "string"
+														},
+														"pxIsOptional": {
+															"type": "boolean"
+														}
+													}
+												}
+											},
+											"pxStageType": {
+												"type": "string"
+											},
+											"pxStageID": {
+												"type": "string"
+											},
+											"pxCompletedStageTime": {
+												"type": "string"
+											},
+											"pxWentTo": {
+												"type": "string"
+											}
+										}
+									}
+								},
+								"pyElapsedCustomerUnsatisfied": {
+									"type": "number"
+								},
+								"pxApplication": {
+									"type": "string"
+								},
+								"AdditionalInfoCount": {
+									"type": "integer"
+								},
+								"pxCoveredInsKeys": {
+									"type": "array",
+									"items": {
+										"type": "string"
+									}
+								},
+								"pxUrgencyWork": {
+									"type": "integer"
+								},
+								"pyStatusWorkTimestamp": {
+									"type": "string"
+								},
+								"pyOrigOrgUnit": {
+									"type": "string"
+								},
+								"pxCoveredCountOpen": {
+									"type": "integer"
+								},
+								"CaseOwnerName": {
+									"type": "string"
+								},
+								"pyHasAttachments": {
+									"type": "string"
+								},
+								"pyOwnerOrgUnit": {
+									"type": "string"
+								},
+								"PayerInformation": {
+									"type": "object",
+									"properties": {
+										"pxObjClass": {
+											"type": "string"
+										},
+										"FamilyName": {
+											"type": "string"
+										},
+										"FirstName": {
+											"type": "string"
+										},
+										"ContactNumber": {
+											"type": "string"
+										},
+										"FULLADDRESS": {
+											"type": "string"
+										},
+										"EmailAddress": {
+											"type": "string"
+										}
+									}
+								},
+								"pyElapsedStatusPending": {
+									"type": "number"
+								},
+								"pyWorkPartiesRule": {
+									"type": "string"
+								},
+								"CouncilArea": {
+									"type": "string"
+								},
+								"pyResolvedUserID": {
+									"type": "string"
+								},
+								"DeterminationOutcome": {
+									"type": "string"
+								},
+								"OwnersDeclaration": {
+									"type": "boolean"
+								},
+								"pxCoveredCountUnsatisfied": {
+									"type": "integer"
+								},
+								"pxCorrSummary": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"pxCorrType": {
+												"type": "string"
+											},
+											"pxObjClass": {
+												"type": "string"
+											},
+											"pxCorrName": {
+												"type": "string"
+											},
+											"pxSentDateTime": {
+												"type": "string"
+											},
+											"pxCorrHandle": {
+												"type": "string"
+											},
+											"pxRecipientPartyUri": {
+												"type": "string"
+											}
+										}
+									}
+								},
+								"IsApplicantWorkPartyChanged": {
+									"type": "boolean"
+								},
+								"LAGDetails": {
+									"type": "object",
+									"properties": {
+										"pxObjClass": {
+											"type": "string"
+										}
+									}
+								},
+								"skipDCDataModelUpdation": {
+									"type": "string"
+								},
+								"ApprovedVariationValue": {
+									"type": "string"
+								},
+								"UtilitySuccessFlag": {
+									"type": "string"
+								},
+								"Assessment": {
+									"type": "object",
+									"properties": {
+										"IsVPARequired": {
+											"type": "boolean"
+										},
+										"IsPreDAMeetingHeld": {
+											"type": "boolean"
+										},
+										"IsAgencyCNRSought": {
+											"type": "boolean"
+										},
+										"DAExhibitionStartDate": {
+											"type": "string"
+										},
+										"IsApplicationExihibited": {
+											"type": "boolean"
+										},
+										"RestrictApplicantContactDetails": {
+											"type": "boolean"
+										},
+										"NumOfTwoBedroomDwellings": {
+											"type": "integer"
+										},
+										"IsThisDevDesignatedDevelopment": {
+											"type": "boolean"
+										},
+										"IsAssessedByPvtConsultants": {
+											"type": "boolean"
+										},
+										"NumOfSubmissionsReceived": {
+											"type": "integer"
+										},
+										"NumOfThreeBedroomDwellings": {
+											"type": "integer"
+										},
+										"pxObjClass": {
+											"type": "string"
+										},
+										"LotSizeArea": {
+											"type": "integer"
+										},
+										"IsSiteSIC": {
+											"type": "boolean"
+										},
+										"NumOfFourorMoreBedroomDwellings": {
+											"type": "integer"
+										},
+										"NumOfOneBedroomDwellings": {
+											"type": "integer"
+										},
+										"DAExhibitionEndDate": {
+											"type": "string"
+										},
+										"DwellingsApproved": {
+											"type": "boolean"
+										},
+										"DeterminingAuthority": {
+											"type": "string"
+										},
+										"SiteInspectedDate": {
+											"type": "string"
+										}
+									}
+								},
+								"pySatisfactionChangeTimestamp": {
+									"type": "string"
+								},
+								"pxUpdateOrgUnit": {
+									"type": "string"
+								},
+								"pyID": {
+									"type": "string"
+								},
+								"pyOwnerDivision": {
+									"type": "string"
+								},
+								"pxSystemUpdateDetailsList": {
+									"type": "array"
+								},
+								"pyStyle": {
+									"type": "string"
+								},
+								"pxCoveredCount": {
+									"type": "integer"
+								},
+								"pyIsDataPageRefreshed": {
+									"type": "string"
+								},
+								"pyOrigUserDivision": {
+									"type": "string"
+								},
+								"ClassOfBuiliding": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"pxObjClass": {
+												"type": "string"
+											},
+											"PropertyName": {
+												"type": "string"
+											},
+											"DisplaySequence": {
+												"type": "integer"
+											},
+											"Value": {
+												"type": "string"
+											},
+											"Label": {
+												"type": "string"
+											},
+											"pzInsKey": {
+												"type": "string"
+											},
+											"pySelected": {
+												"type": "boolean"
+											}
+										}
+									}
+								},
+								"ConsentList": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"Role": {
+												"type": "string"
+											},
+											"pxObjClass": {
+												"type": "string"
+											},
+											"ConsentText": {
+												"type": "string"
+											},
+											"ConsentValue": {
+												"type": "string"
+											},
+											"ConsentProvidedBy": {
+												"type": "string"
+											},
+											"pySelected": {
+												"type": "boolean"
+											}
+										}
+									}
+								},
+								"pyFlowActionsList": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"pyLabelOld": {
+												"type": "string"
+											},
+											"pxObjClass": {
+												"type": "string"
+											},
+											"pxListSubscript": {
+												"type": "string"
+											},
+											"pyFlowKey": {
+												"type": "string"
+											},
+											"pyActionsListIndex": {
+												"type": "string"
+											},
+											"pyDescription": {
+												"type": "string"
+											},
+											"pyLabel": {
+												"type": "string"
+											},
+											"pyUsage": {
+												"type": "string"
+											}
+										}
+									}
+								},
+								"LGAName": {
+									"type": "string"
+								},
+								"OwnersList": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"pxObjClass": {
+												"type": "string"
+											},
+											"PersonalInformation": {
+												"type": "object",
+												"properties": {
+													"pxObjClass": {
+														"type": "string"
+													},
+													"Email": {
+														"type": "object",
+														"properties": {
+															"pxObjClass": {
+																"type": "string"
+															},
+															"Email": {
+																"type": "string"
+															},
+															"ContactString": {
+																"type": "string"
+															}
+														}
+													},
+													"FirstName": {
+														"type": "string"
+													},
+													"pyTitle": {
+														"type": "string"
+													},
+													"LastName": {
+														"type": "string"
+													}
+												}
+											},
+											"Address": {
+												"type": "object",
+												"properties": {
+													"pxObjClass": {
+														"type": "string"
+													},
+													"ContactNumber": {
+														"type": "string"
+													},
+													"FULLADDRESS": {
+														"type": "string"
+													}
+												}
+											},
+											"pxListSubscript": {
+												"type": "string"
+											}
+										}
+									}
+								},
+								"pxCreateOperator": {
+									"type": "string"
+								},
+								"pyFolderType": {
+									"type": "string"
+								},
+								"pyFlowKey": {
+									"type": "string"
+								},
+								"DecisionStartDate": {
+									"type": "string"
+								},
+								"pyLabel": {
+									"type": "string"
+								},
+								"pxCreateOpName": {
+									"type": "string"
+								}
+							}
+						},
+						"CaseMetaData": {
+							"type": "object",
+							"properties": {
+								"Status": {
+									"type": "string"
+								},
+								"pxObjClass": {
+									"type": "string"
+								},
+								"CouncilID": {
+									"type": "string"
+								},
+								"CaseID": {
+									"type": "string"
+								}
+							}
+						},
+						"CaseAttachments": {
+							"type": "object",
+							"properties": {
+								"pxObjClass": {
+									"type": "string"
+								},
+								"Documents": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"pxObjClass": {
+												"type": "string"
+											},
+											"DocID": {
+												"type": "string"
+											},
+											"DocURL": {
+												"type": "string"
+											},
+											"DocumentType": {
+												"type": "string"
+											},
+											"UploadDateTime": {
+												"type": "string"
+											},
+											"DocumentName": {
+												"type": "string"
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
